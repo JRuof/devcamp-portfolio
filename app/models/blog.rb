@@ -5,4 +5,7 @@ class Blog < ApplicationRecord
 
 	# No blog posts can be create without the parameters specified here
 	validates_presence_of :title, :body
+
+	# Data Relation
+	belongs_to :topic
 end
